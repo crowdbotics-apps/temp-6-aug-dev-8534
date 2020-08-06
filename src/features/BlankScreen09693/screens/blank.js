@@ -23,9 +23,9 @@ export class _Blank extends React.Component {
   }
 
   state = {
-    Toggle_4: true,
     Radio_6: true,
     CheckBox_7: true,
+    Toggle_4: true,
     Datepicker_8: new Date("08/06/2020"),
     Input_9: "",
     Input_10: ""
@@ -67,6 +67,37 @@ export class _Blank extends React.Component {
         backgroundSize: "auto"
       }}
     >
+      <Radio
+        text="Radio button"
+        disabled={false}
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          textAlign: "left",
+          verticalAlign: "baseline",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          textDecorationLine: "none",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 0
+        }}
+        checked={this.state.Radio_6}
+        onChange={nextChecked => this.setState({ Radio_6: nextChecked })}
+      />
       <Button
         style={{
           width: "100%",
@@ -102,6 +133,37 @@ export class _Blank extends React.Component {
       >
         Press me!
       </Button>
+      <CheckBox
+        text="Checkbox"
+        disabled={false}
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          textAlign: "left",
+          verticalAlign: "baseline",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          textDecorationLine: "none",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 0
+        }}
+        checked={this.state.CheckBox_7}
+        onChange={nextChecked => this.setState({ CheckBox_7: nextChecked })}
+      />
       <Toggle
         text="switch ON/OFF"
         activeColor="#409EFF"
@@ -162,68 +224,6 @@ export class _Blank extends React.Component {
           borderWidth: 4,
           borderRadius: 14
         }}
-      />
-      <Radio
-        text="Radio button"
-        disabled={false}
-        style={{
-          marginLeft: 0,
-          marginRight: 0,
-          marginTop: 5,
-          marginBottom: 5,
-          paddingLeft: 5,
-          paddingRight: 5,
-          paddingTop: 5,
-          paddingBottom: 5,
-          overflow: "visible",
-          textAlign: "left",
-          verticalAlign: "baseline",
-          borderColor: "#000000",
-          borderStyle: "solid",
-          borderWidth: 0,
-          borderLeftWidth: 0,
-          borderRightWidth: 0,
-          borderTopWidth: 0,
-          borderBottomWidth: 0,
-          borderRadius: 0,
-          textDecorationLine: "none",
-          textTransform: "none",
-          lineHeight: 12,
-          letterSpacing: 0
-        }}
-        checked={this.state.Radio_6}
-        onChange={nextChecked => this.setState({ Radio_6: nextChecked })}
-      />
-      <CheckBox
-        text="Checkbox"
-        disabled={false}
-        style={{
-          marginLeft: 0,
-          marginRight: 0,
-          marginTop: 5,
-          marginBottom: 5,
-          paddingLeft: 5,
-          paddingRight: 5,
-          paddingTop: 5,
-          paddingBottom: 5,
-          overflow: "visible",
-          textAlign: "left",
-          verticalAlign: "baseline",
-          borderColor: "#000000",
-          borderStyle: "solid",
-          borderWidth: 0,
-          borderLeftWidth: 0,
-          borderRightWidth: 0,
-          borderTopWidth: 0,
-          borderBottomWidth: 0,
-          borderRadius: 0,
-          textDecorationLine: "none",
-          textTransform: "none",
-          lineHeight: 12,
-          letterSpacing: 0
-        }}
-        checked={this.state.CheckBox_7}
-        onChange={nextChecked => this.setState({ CheckBox_7: nextChecked })}
       />
       <Datepicker
         style={{
